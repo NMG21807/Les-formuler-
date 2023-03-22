@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+/* style de body*/
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background:#E6E6E8;
+}
+/* style de titre de page*/
+.container .title{
+  font-size: 25px;
+  font-weight: 700;
+  position: relative;
+}
+.title{
+  position: relative;
+  bottom: 30px;
+  left: 70px;
+}
+.container .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+/*fin de style pour le titre */
+/* style  de formulers*/
+.sec{
+  margin-left: 35%;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.user-details .input-box input{
+  height: 34px;
+  width: 400px;
+  font-size: 16px;
+  border-radius: 10px;
+  padding-left:14px;
+  border: 1px solid #604AB2;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  margin-right: 100%;
+}
+/*fin de style  de formulers*/
+/*style de buton*/
+.su{
+  text-align: center;
+  color: #E6E6E8;
+  margin-top: 15px;
+  margin-left: 25%;
+  bottom: 24.95%;
+  background: #604AB3;
+  border-radius: 10px;
+  width: 200px;
+  height: 27px;
+}
+.sec2{
+  position: relative;
+  right: 42%;
+  margin-top: 33%;
+}
+.sec3{
+  position: relative;
+  right: 35%;
+  margin-top: 20%;
+}
+a{
+  color: #E6E6E8;
+  text-decoration: none;
+}
+.a{
+  color: #1A379E;
+  font-size: medium;
+}
+#id{
+  position: relative;
+  left: 33%;
+  bottom: 46%;
+  color: #1A379E;
+}
+.h3 a {
+  color: #1A379E;
+}
+.sp{
+  font-weight: 600;
+}
+.sp a{
+     margin-left: 40%;
+     font-weight: 600;
+}
+.cv{
+  position: relative;
+  left: 30%;
+  bottom:27px;
+  
+}
+/*fin de style de buton*/
+
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category{
+    width: 100%;
+  }
+  .content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .container .content .category{
+    flex-direction: column;
+  }
+}
